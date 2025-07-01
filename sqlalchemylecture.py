@@ -19,7 +19,7 @@ class Shop(Base):
     name = Column(String(50), nullable=False)
 
 
-# Base.metadata.create_all(engine)
+Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind = engine)
 
