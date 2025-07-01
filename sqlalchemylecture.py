@@ -24,7 +24,7 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind = engine)
 
 with Session() as session:
-    session.execute(text("ALTER TABLE shop ADD COLUMN size integer DEFAULT '10'"))
+    # session.execute(text("ALTER TABLE shop ADD COLUMN size integer DEFAULT '10'"))
     # session.execute(text("ALTER TABLE shop ADD COLUMN size integer NULLABLE"))
     session.commit()
 
